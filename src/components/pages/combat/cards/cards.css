@@ -1,0 +1,8 @@
+.knight {
+    background-image: url("../../../assets/images/Knight.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80%;
+    margin-top: 50px;
+}
