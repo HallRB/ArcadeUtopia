@@ -6,3 +6,12 @@
     height: 80%;
     margin-top: 50px;
 }
+
+.enemy {
+    background-image: url("../../../assets/images/Knight2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80%;
+    margin-top: 50px;
+}

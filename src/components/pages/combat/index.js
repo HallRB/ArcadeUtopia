@@ -3,6 +3,7 @@ import { Row } from "react-bootstrap";
 import "./index.css";
 import "../../assets/images/Knight.png";
 import Knight from "./cards/avatar.js";
+import Enemy from "./cards/enemy.js";
 
 
 const Combat = () => {
@@ -39,7 +40,7 @@ const Combat = () => {
 
       <div></div>
 
-      <Knight></Knight>
+      <Enemy></Enemy>
     </div>
     </div>
     );
