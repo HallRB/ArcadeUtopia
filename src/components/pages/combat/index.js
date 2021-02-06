@@ -6,9 +6,13 @@ import Knight from "./cards/avatar.js";
 import Enemy from "./cards/enemy.js";
 import AbilityTray from "./cards/abilities.js";
 
+
+
 const Combat = () => {
-
-
+  function playMusic () {
+    var audioFight = document.getElementById("fightMusic");
+    audioFight.play();
+  }
 
   // Map over this.state.projects and render a project component for each one
   return (
@@ -42,14 +46,20 @@ const Combat = () => {
 
       <div id="announcements">
         "You Win!"
-      </div>
+        <p></p>
+       
+        </div>
 
       <div id="abilities">
         <AbilityTray></AbilityTray>
-      </div>
-    </div>
-    );
+        <button onClick={playMusic}>Start Fight</button>
+          <audio id="fightMusic" src="url(../../assets/sounds/gameMusic.mp3)"></audio>
 
-}
+      </div>
+    </div>    
+    );
+  }
+
+
 
 export default Combat;

@@ -1,5 +1,6 @@
 import React from "react";
 import "../../../App.css";
+import Extra from "../../assets/misc/extra.js"
 const Menu = () => {
 
 
@@ -9,7 +10,7 @@ const Menu = () => {
 
     <div className="gameContainer">
 
-<h1>Hello World</h1>
+<Extra></Extra>
 
     </div>
 
