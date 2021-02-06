@@ -4,7 +4,7 @@ import "./index.css";
 import "../../assets/images/Knight.png";
 import Knight from "./cards/avatar.js";
 import Enemy from "./cards/enemy.js";
-
+import AbilityTray from "./cards/abilities.js";
 
 const Combat = () => {
 
@@ -35,13 +35,18 @@ const Combat = () => {
       </div>
 
       <div id="centerWrap">
-
-        <Knight></Knight>
-
+      <Knight></Knight>
       <div></div>
-
       <Enemy></Enemy>
-    </div>
+      </div>
+
+      <div id="announcements">
+        "You Win!"
+      </div>
+
+      <div id="abilities">
+        <AbilityTray></AbilityTray>
+      </div>
     </div>
     );
 
