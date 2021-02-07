@@ -5,6 +5,7 @@ import "../../assets/images/Knight.png";
 import Knight from "./cards/avatar.js";
 import Enemy from "./cards/enemy.js";
 import AbilityTray from "./cards/abilities.js";
+import Extra from "../../assets/misc/extra.js"
 
 
 
@@ -52,8 +53,7 @@ const Combat = () => {
 
       <div id="abilities">
         <AbilityTray></AbilityTray>
-        <button onClick={playMusic}>Start Fight</button>
-          <audio id="fightMusic" src="url(../../assets/sounds/gameMusic.mp3)"></audio>
+        <Extra></Extra>
 
       </div>
     </div>    

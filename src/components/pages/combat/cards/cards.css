@@ -18,4 +18,35 @@
 
 .ability {
     border: solid 3px purple;
+    width: 100px;
+    height: 100px;
+}
+
+
+#sword {
+    border: solid 3px blue;
+    width: 100px;
+    height: 100px;
+}
+
+#tray {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+}
+
+#heal {
+    background-image: url(../../../assets/images/Heal.png);
+    width: 100px;
+    height: 100px;
+}
+
+#sword {
+    background-image: url(../../../assets/images/Sword.png)
+}
+
+#fire {
+    background-image: url(../../../assets//images/Fireball.png);
 }
