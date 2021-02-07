@@ -5,6 +5,7 @@ import Heal from "./abilities/heal.js";
 import Fire from "./abilities/fire.js";
 import Shield from "./abilities/reflect";
 import Bow from "./abilities/bow";
+
 class AbilityTray extends Component {
     render() {
         return(
