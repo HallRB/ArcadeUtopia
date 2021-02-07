@@ -14,7 +14,7 @@ class Sword extends Component {
         
     }
 
-    RenderSwordandSound = () => {
+    abilityandsound = () => {
         return Music.map((soundObj, index) => {
         return (
             <button key={index} id="sword" onClick={() => this.SwordSound(soundObj.sound)}> 
@@ -24,8 +24,8 @@ class Sword extends Component {
     }
     render() {
         Howler.volume(1.0)
-        return <div className="swordSound">
-        {this.RenderSwordandSound()}
+        return <div className="sound">
+        {this.abilityandsound()}
         </div>
     }
 }
