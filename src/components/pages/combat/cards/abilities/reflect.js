@@ -4,7 +4,7 @@ import "../cards.css"
 class Heal extends Component {
     render() {
         return(
-            <input type="button" className="icon" id="heal"></input>
+            <input type="button" className="icon" id="shield"></input>
         )
     }
 }

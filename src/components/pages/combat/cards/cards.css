@@ -1,3 +1,4 @@
+/* Avatars used in combat */
 .knight {
     background-image: url("../../../assets/images/Knight.png");
     background-size: cover;
@@ -16,18 +17,14 @@
     margin-top: 50px;
 }
 
+
+
+/* Abilities */
 .ability {
-    border: solid 3px purple;
     width: 100px;
     height: 100px;
 }
 
-
-#sword {
-    border: solid 3px blue;
-    width: 100px;
-    height: 100px;
-}
 
 #tray {
     display: grid;
@@ -37,16 +34,32 @@
     width: max-content;
 }
 
-#heal {
-    background-image: url(../../../assets/images/Heal.png);
+#sword {
+    background-image: url(../../../assets/images/Sword.png);
     width: 100px;
     height: 100px;
 }
 
-#sword {
-    background-image: url(../../../assets/images/Sword.png)
+#shield {
+    background-image: url(../../../assets/images/Shield.png);
+    width: 100px;
+    height: 100px;
+}
+
+#bow {
+    background-image: url(../../../assets/images/Bow.png);
+    width: 100px;
+    height: 100px;
 }
 
 #fire {
     background-image: url(../../../assets//images/Fireball.png);
+    width: 100px;
+    height: 100px;
+}
+
+#heal {
+    background-image: url(../../../assets/images/Heal.png);
+    width: 100px;
+    height: 100px;
 }
