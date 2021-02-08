@@ -7,6 +7,13 @@ const Music = [{sound: Healing}]
 
 class Heal extends Component {
 
+    // Healgif = () => {
+    //     const avatar = document.getElementById("knight");
+    //     const neutral = "../../../../assets/images/Knight.png";
+    //     const heal = "../../../../assets/images/Heal.png";
+        
+    // }
+
     Sound = (src) => {
         const sound = new Howl ({
             src})
