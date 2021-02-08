@@ -19,8 +19,7 @@ class Sword extends Component {
             src})
             sound.play();
                 if (myHP<=0) 
-                    { document.getElementById("announcements").innerHTML="You Lose!";
-                    return;      
+                    { document.getElementById("announcements").innerHTML="You Lose!";     
                 } else if (enemyHP<=0) 
                      { document.getElementById("announcements").innerHTML="You Win!"
                 } else 

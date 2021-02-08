@@ -25,15 +25,13 @@ class Heal extends Component {
         } else if (enemyHP<=0) 
              { document.getElementById("announcements").innerHTML="You Win!"
         } else 
-        {   var strength = 5;
-            var damage = Math.floor((Math.random() * 12)) + strength;
-            console.log("you did " + damage + " damage");
+        {   var spirit = 5
+            var heal = Math.floor(((Math.random() * 4) * spirit) + 1);
         }
-        enemyHP -= damage;
-        var bossdamage = Math.floor((Math.random() * 10) + 1);
-        myHP -= bossdamage;
-        console.log("the enemy took " + damage + " damage")
-        console.log("you received " + bossdamage + " damage")
+        var bossdamage = Math.floor((Math.random() * 15) + 1);
+        myHP -= (bossdamage - heal);
+        console.log("You healed yourself for " + heal + " health")
+        console.log("you received " + bossdamage + " damage from the enemy")
         console.log(myHP);
         console.log(enemyHP);
     }
