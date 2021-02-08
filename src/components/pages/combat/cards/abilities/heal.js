@@ -4,7 +4,8 @@ import {Howl, Howler} from "howler";
 import Healing from "../../../../assets/sounds/healing.wav";
 
 const Music = [{sound: Healing}]
-
+var myHP = 100;
+var enemyHP = 300;
 class Heal extends Component {
 
     // Healgif = () => {
@@ -18,7 +19,23 @@ class Heal extends Component {
         const sound = new Howl ({
             src})
             sound.play();
-        
+            if (myHP<=0) 
+            { document.getElementById("announcements").innerHTML="You Lose!";
+            return;      
+        } else if (enemyHP<=0) 
+             { document.getElementById("announcements").innerHTML="You Win!"
+        } else 
+        {   var strength = 5;
+            var damage = Math.floor((Math.random() * 12)) + strength;
+            console.log("you did " + damage + " damage");
+        }
+        enemyHP -= damage;
+        var bossdamage = Math.floor((Math.random() * 10) + 1);
+        myHP -= bossdamage;
+        console.log("the enemy took " + damage + " damage")
+        console.log("you received " + bossdamage + " damage")
+        console.log(myHP);
+        console.log(enemyHP);
     }
 
     abilityandsound = () => {

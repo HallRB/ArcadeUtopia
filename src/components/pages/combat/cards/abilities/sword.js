@@ -19,7 +19,8 @@ class Sword extends Component {
             src})
             sound.play();
                 if (myHP<=0) 
-                    { document.getElementById("announcements").innerHTML="You Lose!"
+                    { document.getElementById("announcements").innerHTML="You Lose!";
+                    return;      
                 } else if (enemyHP<=0) 
                      { document.getElementById("announcements").innerHTML="You Win!"
                 } else 
@@ -30,9 +31,11 @@ class Sword extends Component {
                 enemyHP -= damage;
                 var bossdamage = Math.floor((Math.random() * 10) + 1);
                 myHP -= bossdamage;
-                console.log("the enemy took damage")
+                console.log("the enemy took " + damage + " damage")
+                console.log("you received " + bossdamage + " damage")
                 console.log(myHP);
                 console.log(enemyHP);
+
         
     }
 
