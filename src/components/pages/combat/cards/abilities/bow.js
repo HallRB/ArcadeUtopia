@@ -19,16 +19,18 @@ class Bow extends Component {
              { document.getElementById("announcements").innerHTML="You Win!"
         } else 
         {   var strength = 5;
-            var damage = Math.floor((Math.random() * 8)) + strength;
-            console.log("you did " + damage + " damage");
+            var bowdamage = Math.floor((Math.random() * 8)) + strength;
+            console.log("you did " + bowdamage + " damage");
         }
-        enemyHP -= damage;
-        var bossdamage = Math.floor((Math.random() * 6) + 1);
-        myHP -= bossdamage;
-        console.log("the enemy took " + damage + " damage")
-        console.log("you received " + bossdamage + " damage")
+        enemyHP -= bowdamage;
+        var bossbowdamage = Math.floor((Math.random() * 6) + 1);
+        myHP -= bossbowdamage;
+        
+        console.log("the enemy took " + bowdamage + " damage")
+        console.log("you received " + bossbowdamage + " damage")
         console.log(myHP);
-        console.log(enemyHP);  
+        console.log(enemyHP);
+        document.getElementById("bowdamage").innerHTML = bossbowdamage;
     }
 
     abilityandsound = () => {

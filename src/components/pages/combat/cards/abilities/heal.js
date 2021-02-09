@@ -34,6 +34,7 @@ class Heal extends Component {
         console.log("you received " + bossdamage + " damage from the enemy")
         console.log(myHP);
         console.log(enemyHP);
+        document.getElementById("healingdone").innerHTML = heal;
     }
 
     abilityandsound = () => {

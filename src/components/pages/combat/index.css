@@ -70,3 +70,7 @@ height: 470px;
     margin-right: auto;
     width: 60%;
 }
+
+.spelleffects {
+    display: inline;
+}

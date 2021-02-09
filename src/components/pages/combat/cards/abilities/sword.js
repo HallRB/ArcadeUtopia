@@ -34,7 +34,7 @@ class Sword extends Component {
                 console.log("you received " + bossdamage + " damage")
                 console.log(myHP);
                 console.log(enemyHP);
-
+                document.getElementById("sworddamage").innerHTML = bossdamage;
         
     }
 
