@@ -1,13 +1,10 @@
 import React from "react";
 import "../../../App.css";
-const Menu = () => {
+const World = () => {
 
   // Map over this.state.projects and render a project component for each one
   return (
-    <div id="total">
-    <div id="announcements"></div>
-    <div className="gameContainer">
-    </div>
+    <div id="world">
 
     </div>
 
@@ -15,4 +12,4 @@ const Menu = () => {
 
 }
 
-export default Menu;
+export default World;

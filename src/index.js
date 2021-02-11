@@ -6,10 +6,13 @@ import reportWebVitals from './reportWebVitals';
 import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
 import { BrowserRouter } from 'react-router-dom';
+import Auth0ProviderWithHistory from "./auth0-provider-with-history";
 
 ReactDOM.render(
   <BrowserRouter>
+  <Auth0ProviderWithHistory>
     <App />
+    </Auth0ProviderWithHistory>
   </BrowserRouter>
 
   ,document.getElementById('root')

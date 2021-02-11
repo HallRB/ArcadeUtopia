@@ -11,9 +11,9 @@ class App extends Component {
         <div className="canvas">
           <div className="navlinks">
                 <Link to="/combat">Fight!</Link>
-                <Link to="/menu">Menu</Link>
+                <Link to="/characterselect">Character</Link>
+                <Link to="/world">World</Link>
                 <Link to="/login">Login</Link>
-                <Link to="/signup">Sign Up</Link>
                 </div>
 
         <Content>

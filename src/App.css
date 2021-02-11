@@ -28,16 +28,28 @@ body {
 
 .navlinks {
   border-bottom: 5px solid chartreuse;
-  font-size: 30px;
+  font-size: 20px;
 display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin-top: 10px;
+  margin-top: 25px;
   margin-bottom: 50px;
   padding-bottom: 8px;
+  column-gap: 5px;
 
 }
 
 a, a:hover, a:focus, a:active {
   text-decoration: none;
 color: whitesmoke;
+}
+
+#loginpic {
+  background-image: url("./components/assets/images/login.JPG");
+  width: 300px;
+  height: 450px;
+}
+
+#character {
+  width: 500px;
+  height: 500px;
 }
