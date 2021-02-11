@@ -21,6 +21,7 @@ class Shield extends Component {
         } else 
         {   var strength = 5;
             var damage = Math.floor((Math.random() * 12)) + strength;
+            console.log(" __________________________ ")
             console.log("you did " + damage + " damage");
         }
         enemyHP -= damage;
@@ -32,8 +33,8 @@ class Shield extends Component {
 
         console.log("the enemy took " + damage + " damage")
         console.log("you received " + bossdamage + " damage")
-        console.log(myHP);
-        console.log(enemyHP);
+        console.log("your health is " + myHP);
+        console.log("your enemy's health is " + enemyHP);
     }
 
     abilityandsound = () => {

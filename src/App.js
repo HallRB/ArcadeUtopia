@@ -8,7 +8,7 @@ class App extends Component {
   render() {
   return (
     
-        <div class="canvas">
+        <div className="canvas">
           <div className="navlinks">
                 <Link to="/combat">Fight!</Link>
                 <Link to="/menu">Menu</Link>

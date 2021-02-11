@@ -27,6 +27,7 @@ class Sword extends Component {
                 } else 
                 {   var strength = 5;
                     var damage = Math.floor((Math.random() * 12)) + strength;
+                    console.log(" __________________________ ")
                     console.log("you did " + damage + " damage");
                 }
                 enemyHP -= damage;
@@ -36,11 +37,12 @@ class Sword extends Component {
                 setMyHP(myHP);
                 setEnemyHP(enemyHP);
 
+
+
                 console.log("the enemy took " + damage + " damage")
                 console.log("you received " + bossdamage + " damage")
-                console.log(myHP);
-                console.log(enemyHP);
-                document.getElementById("sworddamage").innerHTML = bossdamage;
+                console.log("your health is " + myHP);
+                console.log("your enemy's health is " + enemyHP);
         
     }
 

@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import "../../pages/combat/cards/cards.css";
 import {Howl, Howler} from "howler";
 import ArrowFire from "../sounds/arrow.wav";
-import SwordSwipe from "../sounds/swordswipe.wav";
 
 const Music = [{sound: ArrowFire}]
 

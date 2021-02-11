@@ -22,6 +22,7 @@ class Bow extends Component {
         } else 
         {   var strength = 5;
             var bowdamage = Math.floor((Math.random() * 8)) + strength;
+        console.log(" __________________________ ")
             console.log("you did " + bowdamage + " damage");
         }
         enemyHP -= bowdamage;
@@ -31,11 +32,11 @@ class Bow extends Component {
         setMyHP(myHP);
         setEnemyHP(enemyHP);
 
+
         console.log("the enemy took " + bowdamage + " damage")
         console.log("you received " + bossbowdamage + " damage")
-        console.log(myHP);
-        console.log(enemyHP);
-        document.getElementById("bowdamage").innerHTML = bossbowdamage;
+        console.log("your health is " + myHP);
+        console.log("your enemy's health is " + enemyHP);
     }
 
     abilityandsound = () => {

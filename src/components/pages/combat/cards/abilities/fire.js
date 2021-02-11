@@ -23,6 +23,7 @@ class Fire extends Component {
         } else 
         {   
             var damage = Math.floor((Math.random() * 30));
+            console.log(" __________________________ ")
             console.log("you did " + damage + " damage");
         }
         enemyHP -= damage;
@@ -32,11 +33,12 @@ class Fire extends Component {
         setMyHP(myHP);
         setEnemyHP(enemyHP);
 
+
         console.log("the enemy took " + damage + " damage")
         console.log("you received " + bossdamage + " damage")
-        console.log(myHP);
-        console.log(enemyHP);
-        document.getElementById("firedamage").innerHTML = damage;
+        console.log("your health is " + myHP);
+        console.log("your enemy's health is " + enemyHP);
+
     }
 
     abilityandsound = () => {

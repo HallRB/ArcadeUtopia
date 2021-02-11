@@ -11,11 +11,11 @@ class AbilityTray extends Component {
     render() {
         return(
             <div id="tray">
-                <div class="ability" id="abi1"><Sword></Sword></div>
-                <div class="ability" id="abi2"><Bow></Bow></div>
-                <div class="ability" id="abi3"><Shield></Shield></div>
-                <div class="ability" id="abi4"><Fire></Fire></div>
-                <div class="ability" id="abi5"><Heal></Heal></div>
+                <div className="ability" id="abi1"><Sword></Sword></div>
+                <div className="ability" id="abi2"><Bow></Bow></div>
+                <div className="ability" id="abi3"><Shield></Shield></div>
+                <div className="ability" id="abi4"><Fire></Fire></div>
+                <div className="ability" id="abi5"><Heal></Heal></div>
             </div>
         )
     }

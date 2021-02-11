@@ -18,6 +18,7 @@ class Heal extends Component {
     Sound = (src) => {
         var myHP = getMyHP();
         var enemyHP = getEnemyHP();
+        
 
         const sound = new Howl ({
             src})
@@ -33,15 +34,18 @@ class Heal extends Component {
         }
         var bossdamage = Math.floor((Math.random() * 15) + 1);
         myHP -= (bossdamage - heal);
+        console.log(" __________________________ ")
+
 
         setMyHP(myHP);
         setEnemyHP(enemyHP);
 
+
         console.log("You healed yourself for " + heal + " health")
         console.log("you received " + bossdamage + " damage from the enemy")
-        console.log(myHP);
-        console.log(enemyHP);
-        document.getElementById("healingdone").innerHTML = heal;
+        console.log("your health changed by " + (bossdamage - heal))
+        console.log("your health is " + myHP);
+        console.log("your enemy's health is " + enemyHP);
     }
 
     abilityandsound = () => {
