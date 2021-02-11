@@ -48,3 +48,19 @@
     margin-bottom: 25px;
     font-size: 35px;
 }
+
+#wiz {
+    background-image: url("../../assets/images/Wizard.gif");
+    width: 200px;
+    height: 375px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#knight {
+    background-image: url("../../assets/images/knightgif.gif");
+    width: 200px;
+    height: 375px;
+    margin-left: auto;
+    margin-right: auto;
+}

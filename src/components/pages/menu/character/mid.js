@@ -4,8 +4,10 @@ import "../index.css";
 const Mid = () => {
 
     return (
-    <div id="wrap">
-    Test mid
+    <div className="selectchar">
+
+<div id="knight"></div>
+<input type="submit" className="submit" value="Select Knight" />
     </div>
     )
 }

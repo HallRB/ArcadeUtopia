@@ -4,8 +4,9 @@ import "../index.css";
 const Left = () => {
 
     return (
-    <div id="wrap">
-    test right
+        <div className="selectchar">
+<div id="wiz"></div>
+<input type="submit" className="submit" value="Select Wizard" />
     </div>
     )
 }
