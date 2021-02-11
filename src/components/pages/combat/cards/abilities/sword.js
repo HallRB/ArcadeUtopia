@@ -28,7 +28,7 @@ class Sword extends Component {
                 {   var strength = 5;
                     var damage = Math.floor((Math.random() * 12)) + strength;
                     console.log(" __________________________ ")
-                    console.log("you did " + damage + " damage");
+                    console.log("your sword dealt " + damage + " damage");
                 }
                 enemyHP -= damage;
                 var bossdamage = Math.floor((Math.random() * 10) + 1);

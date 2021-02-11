@@ -23,7 +23,7 @@ class Bow extends Component {
         {   var strength = 5;
             var bowdamage = Math.floor((Math.random() * 8)) + strength;
         console.log(" __________________________ ")
-            console.log("you did " + bowdamage + " damage");
+            console.log("you shot the enemy for " + bowdamage + " damage");
         }
         enemyHP -= bowdamage;
         var bossbowdamage = Math.floor((Math.random() * 6) + 1);

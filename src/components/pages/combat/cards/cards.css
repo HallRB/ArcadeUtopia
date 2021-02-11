@@ -17,6 +17,17 @@
     margin-top: 50px;
 }
 
+.fireball {
+    visibility: visible;
+    background-image: url("../../../assets/images/fireball2.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 80%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 /* Abilities */

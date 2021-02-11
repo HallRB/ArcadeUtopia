@@ -24,7 +24,7 @@ class Fire extends Component {
         {   
             var damage = Math.floor((Math.random() * 30));
             console.log(" __________________________ ")
-            console.log("you did " + damage + " damage");
+            console.log("your fireball dealt " + damage + " damage");
         }
         enemyHP -= damage;
         var bossdamage = Math.floor((Math.random() * 20) + 1);

@@ -5,6 +5,7 @@ import Knight from "./cards/avatar.js";
 import Enemy from "./cards/enemy.js";
 import AbilityTray from "./cards/abilities.js";
 import HP from "./cards/hp.js";
+import BattleZone from "./cards/battlezone";
 
 
 
@@ -18,7 +19,7 @@ const Combat = () => {
 
       <div id="centerWrap">
       <Knight></Knight>
-      <div></div>
+      <div><BattleZone></BattleZone></div>
       <Enemy></Enemy>
       </div>
 
