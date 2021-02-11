@@ -28,3 +28,23 @@
     border: solid white 2px;
 }
 
+.formwrap {
+    height:25px;
+    margin: 10px;
+}
+
+.submit {
+    margin-top: 10px;
+    height: 35px;
+    font-size: 25px;
+}
+
+.labelright {
+    font-size: 25px;
+}
+
+#stats {
+    margin: 10px;
+    margin-bottom: 25px;
+    font-size: 35px;
+}
