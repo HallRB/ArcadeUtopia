@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import "../cards.css"
 import {Howl, Howler} from "howler";
+import {getMyHP, getEnemyHP, setMyHP, setEnemyHP} from './countHP';
 import Healing from "../../../../assets/sounds/healing.wav";
 
 const Music = [{sound: Healing}]
-var myHP = 100;
-var enemyHP = 300;
+
 class Heal extends Component {
 
     // Healgif = () => {
@@ -16,6 +16,9 @@ class Heal extends Component {
     // }
 
     Sound = (src) => {
+        var myHP = getMyHP();
+        var enemyHP = getEnemyHP();
+
         const sound = new Howl ({
             src})
             sound.play();
@@ -30,6 +33,10 @@ class Heal extends Component {
         }
         var bossdamage = Math.floor((Math.random() * 15) + 1);
         myHP -= (bossdamage - heal);
+
+        setMyHP(myHP);
+        setEnemyHP(enemyHP);
+
         console.log("You healed yourself for " + heal + " health")
         console.log("you received " + bossdamage + " damage from the enemy")
         console.log(myHP);

@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import "../cards.css"
 import {Howl, Howler} from "howler";
+import {getMyHP, getEnemyHP, setMyHP, setEnemyHP} from './countHP';
 import Reflect from "../../../../assets/sounds/shieldreflect.wav";
 
 const Music = [{sound: Reflect}]
-var myHP = 100;
-var enemyHP = 300;
+var myHP = getMyHP();
+var enemyHP = getEnemyHP();
 class Shield extends Component {
 
     Sound = (src) => {
@@ -25,6 +26,10 @@ class Shield extends Component {
         enemyHP -= damage;
         var bossdamage = Math.floor((Math.random() * 10) + 1);
         myHP -= bossdamage;
+
+        setMyHP(myHP);
+        setEnemyHP(enemyHP);
+
         console.log("the enemy took " + damage + " damage")
         console.log("you received " + bossdamage + " damage")
         console.log(myHP);

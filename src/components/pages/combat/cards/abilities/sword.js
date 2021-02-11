@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import "../cards.css";
 import {Howl, Howler} from "howler";
+import {getMyHP, getEnemyHP, setMyHP, setEnemyHP} from './countHP';
 import SwordSwipe from "../../../../assets/sounds/swordswipe.wav";
 
 const Music = [{sound: SwordSwipe}]
-var myHP = 100;
-var enemyHP = 300;
 
 class Sword extends Component {
 
@@ -15,6 +14,9 @@ class Sword extends Component {
     
     }
     Sound = (src) => {
+        var myHP = getMyHP();
+        var enemyHP = getEnemyHP();
+
         const sound = new Howl ({
             src})
             sound.play();
@@ -30,6 +32,10 @@ class Sword extends Component {
                 enemyHP -= damage;
                 var bossdamage = Math.floor((Math.random() * 10) + 1);
                 myHP -= bossdamage;
+
+                setMyHP(myHP);
+                setEnemyHP(enemyHP);
+
                 console.log("the enemy took " + damage + " damage")
                 console.log("you received " + bossdamage + " damage")
                 console.log(myHP);

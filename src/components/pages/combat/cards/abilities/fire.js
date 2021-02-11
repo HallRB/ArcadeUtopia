@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
 import "../cards.css"
 import {Howl, Howler} from "howler";
+import {getMyHP, getEnemyHP, setMyHP, setEnemyHP} from './countHP';
 import ArrowFire from "../../../../assets/sounds/fireball.wav";
 
 const Music = [{sound: ArrowFire}]
-var myHP = 100;
-var enemyHP = 300;
+
 class Fire extends Component {
 
     Sound = (src) => {
+        var myHP = getMyHP();
+        var enemyHP = getEnemyHP();
+
         const sound = new Howl ({
             src})
             sound.play();
@@ -25,6 +28,10 @@ class Fire extends Component {
         enemyHP -= damage;
         var bossdamage = Math.floor((Math.random() * 20) + 1);
         myHP -= bossdamage;
+
+        setMyHP(myHP);
+        setEnemyHP(enemyHP);
+
         console.log("the enemy took " + damage + " damage")
         console.log("you received " + bossdamage + " damage")
         console.log(myHP);
