@@ -1,27 +1,23 @@
 import React from "react";
-import "../combat/index.css";
-import BattleZone from "../combat/cards/battlezone";
+import "./index.css";
 
 const Character = () => {
 
     return (
-        <div id="battleWrap">
-          <div id="hpWrap">
- 
-          </div>
+    <div id="characterwrap">
     
-          <div id="centerWrap">
+        <div id="charactermain">Hello there
 
-          <div><BattleZone></BattleZone></div>
 
-          </div>
+        <div id="bigcharacter">a</div>
+
+        <div id="smallcharacter">a</div>
+
+        <div id="stats">
+        </div>
     
-          <div id="announcements"></div>
-            <p></p>
-    
-
-        </div>    
-        );
-      }
-
-export default Character;
+    </div>
+    </div>
+    )
+}
+export default Character

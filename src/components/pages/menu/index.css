@@ -1,3 +1,30 @@
-.gameContainer {
-    
+#charactermain {
+
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 3px black;
 }
+
+#bigcharacter {
+
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 3px black;
+}
+
+#smallcharacter {
+
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 3px black;
+}
+
+
+#characterwrap {
+    width: 800px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: solid white 2px;
+}
+

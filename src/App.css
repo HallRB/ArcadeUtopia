@@ -28,7 +28,7 @@ body {
 
 .navlinks {
   border-bottom: 5px solid chartreuse;
-  font-size: 20px;
+  font-size: 30px;
 display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-top: 25px;
