@@ -6,6 +6,13 @@ const World = () => {
   return (
     <div id="world">
 
+<div className="worldbox">
+  <div className="box" id="box1">A</div>
+  <div className="box" id="box2">B</div>
+  <div className="box" id="box3">C</div>
+  <div className="box" id="box4">D</div>
+</div>
+
     </div>
 
     );

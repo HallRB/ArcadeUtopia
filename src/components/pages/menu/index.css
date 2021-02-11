@@ -25,7 +25,11 @@
     height: 500px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    border: solid white 2px;
+    border: solid black 2px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .formwrap {
