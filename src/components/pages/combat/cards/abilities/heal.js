@@ -39,7 +39,8 @@ class Heal extends Component {
 
         setMyHP(myHP);
         setEnemyHP(enemyHP);
-
+        document.getElementById("hpa").innerHTML=myHP;    
+        document.getElementById("hpb").innerHTML=enemyHP;   
 
         console.log("You healed yourself for " + heal + " health")
         console.log("you received " + bossdamage + " damage from the enemy")
