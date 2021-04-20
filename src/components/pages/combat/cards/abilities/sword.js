@@ -37,8 +37,9 @@ class Sword extends Component {
                 setMyHP(myHP);
                 setEnemyHP(enemyHP);
 
-
-
+                    
+                document.getElementById("hpa").innerHTML=myHP;    
+                document.getElementById("hpb").innerHTML=enemyHP;   
                 console.log("the enemy took " + damage + " damage")
                 console.log("you received " + bossdamage + " damage")
                 console.log("your health is " + myHP);

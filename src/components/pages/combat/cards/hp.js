@@ -8,9 +8,9 @@ class HP extends Component {
             <Row>
             <div className="ColWrap">
             <div className="Col">
-          <div id="hpa" value="100" max="100"></div>
+          <div id="hpa" value="100" max="100">100</div>
           <div className="ColMid"></div>
-          <div id="hpb" value="100" max="100"></div>
+          <div id="hpb" value="100" max="100">100</div>
           </div>
           </div>
           </Row>
