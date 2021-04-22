@@ -19,7 +19,7 @@
 
 .fireball {
     visibility: visible;
-    background-image: url("../../../assets/images/fireball2.JPG");
+    background-image: url("../../../assets/images/Fireballmovement.gif");
     background-size: cover;
     background-repeat: no-repeat;
     width: 200px;
